@@ -1,0 +1,319 @@
+body {
+  background-color: rgb(28, 27, 27);
+  color: antiquewhite;
+}
+
+/* ------------------------------------------common */
+
+@media only screen and (max-width: 1100px) {
+  .sec {
+    padding: 5vh 0 5vh 0 !important;
+  }
+}
+
+.secHeading {
+  align-self: center;
+  font-size: 2.5rem;
+}
+
+.sec {
+  display: flex;
+  flex-direction: column;
+  padding: 13vh 0 10vh 0;
+}
+
+/* -------------------------------------Scroll Animation */
+.hidden {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+/* ------------------------------------navigation bar */
+
+@media only screen and (max-width: 900px) {
+  nav ul {
+    flex-direction: column;
+    margin-left: 0%;
+  }
+
+  nav {
+    flex-direction: column;
+    position: static !important;
+  }
+
+  ul {
+    padding: 0%;
+    margin: 0%;
+  }
+}
+
+nav ul {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4px solid red;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  position: fixed;
+  width: 99%;
+  top: 0%;
+  background-color: rgb(28, 27, 27);
+  z-index: 2;
+}
+
+nav li {
+  padding: 20px;
+  list-style-type: none;
+  border-radius: 35px;
+  color: antiquewhite;
+  text-align: center;
+}
+
+nav li:hover {
+  background-color: rgb(67, 25, 25);
+  text-decoration-line: underline;
+}
+
+.current {
+  background-color: rgb(67, 25, 25);
+  text-decoration-line: underline;
+  border-radius: 30px;
+}
+
+.button {
+  padding: 15px;
+  margin: 25px;
+  background-color: brown;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.button a {
+  color: blanchedalmond;
+}
+
+/* -----------------------------------Home page */
+
+@media only screen and (max-width: 1100px) {
+  #home {
+    flex-direction: column !important;
+    padding: 0%;
+    margin: 20px 0 20px 0 !important;
+    text-align: center;
+    height: fit-content !important;
+  }
+
+  #home img {
+    height: 280px !important;
+    width: 280px !important;
+    margin: 50px 0 50px 0 !important;
+    align-self: center;
+  }
+
+  .content {
+    margin: 0% !important;
+  }
+}
+
+#home {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 80vh;
+  padding-top: 5%;
+}
+
+#home img {
+  height: 50vh;
+  width: auto;
+  margin: 10% 10% 0% 0%;
+  border-radius: 40px;
+}
+
+.content {
+  margin: 180px 80px 0px 10%;
+}
+
+#welcome {
+  font-size: 35px;
+}
+
+#name {
+  font-size: 60px;
+}
+
+#student {
+  font-size: 25px;
+}
+
+#text {
+  font-size: 20px;
+}
+
+/* -----------------------------education section  */
+
+#education {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2px;
+}
+
+#education a {
+  color: aqua;
+}
+
+#education a:hover {
+  color: rgb(95, 235, 167);
+}
+
+.eduDet {
+  padding: 0%;
+  margin-left: 10%;
+}
+
+#education h2 {
+  font-size: 200%;
+}
+
+#education p {
+  font-size: 140%;
+}
+
+/* -----------------------------------------Skills Section  */
+
+@media only screen and (max-width: 1100px) {
+  #skills img {
+    max-width: 5.1lh !important;
+    height: 10vh !important;
+    padding: 15px !important;
+  }
+
+  .skiDet {
+    flex-wrap: wrap;
+    margin: 15px;
+  }
+}
+
+#skills {
+  margin-top: 2px;
+}
+
+#skills h1 {
+  font-size: 2.5rem;
+  margin: 5vh;
+}
+
+#skills img {
+  max-width: 8lh;
+  height: 20vh;
+  background-color: blanchedalmond;
+  border-radius: 15px;
+}
+
+.skiDet {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.ski:nth-child(2) {
+  transition-delay: 200ms;
+}
+.ski:nth-child(3) {
+  transition-delay: 300ms;
+}
+.ski:nth-child(4) {
+  transition-delay: 400ms;
+}
+.ski:nth-child(5) {
+  transition-delay: 500ms;
+}
+.ski:nth-child(6) {
+  transition-delay: 600ms;
+}
+
+/* -----------------------------------projects section */
+
+@media only screen and (max-width: 1200px) {
+  #projects {
+    padding: 5vh 5ch 5vh 5vh !important;
+  }
+}
+
+#projects {
+  display: flex;
+  padding: 15vh 30vh 0vh 30vh;
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+#projects h2 {
+  align-self: center;
+  font-size: 2rem;
+}
+
+#projects a {
+  color: aquamarine;
+}
+
+/* ------------------------------Achivements section */
+
+@media only screen and (max-width: 1100px) {
+  #achievements {
+    height: fit-content !important;
+  }
+
+  #achievements h2 {
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    text-align: center;
+  }
+}
+
+#achievements {
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  padding-top: 20vh;
+  margin-top: 2px;
+}
+
+#achievements div {
+  align-self: center;
+}
+
+#achievements a {
+  color: aquamarine;
+}
+
+/* ---------------------------------Contact section */
+
+@media only screen and (max-width: 900px) {
+  #contact {
+    padding: 20px !important;
+  }
+}
+
+#contact {
+  background-color: rgb(220, 158, 143);
+  color: black;
+  border-radius: 20px;
+  font-size: 25px;
+  padding: 35vh 25% 35vh 25%;
+  margin-top: 5px;
+}
+
+#contact img {
+  height: 25px;
+}
