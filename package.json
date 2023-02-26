@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "type.js": "^0.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
