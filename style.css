@@ -80,6 +80,10 @@ nav li {
   text-align: center;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 nav li:hover {
   background-color: rgb(67, 25, 25);
   text-decoration-line: underline;
@@ -87,7 +91,6 @@ nav li:hover {
 
 .current {
   background-color: rgb(67, 25, 25);
-  text-decoration-line: underline;
   border-radius: 30px;
 }
 
@@ -97,6 +100,10 @@ nav li:hover {
   background-color: brown;
   border-radius: 20px;
   text-align: center;
+}
+
+.button:hover {
+  text-decoration: underline;
 }
 
 .button a {
