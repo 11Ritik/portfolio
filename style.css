@@ -1,6 +1,7 @@
 body {
   background-color: rgb(28, 27, 27);
   color: antiquewhite;
+  font-family: "Tilt Neon", cursive;
 }
 
 /* ------------------------------------------common */
@@ -310,6 +311,11 @@ nav li:hover {
   #contact {
     padding: 20px !important;
   }
+
+  #contact img {
+    height: 9vw !important;
+    width: 9vw !important;
+  }
 }
 
 #contact {
@@ -317,10 +323,20 @@ nav li:hover {
   color: black;
   border-radius: 20px;
   font-size: 25px;
-  padding: 35vh 25% 35vh 25%;
+  padding: 30vh 25% 30vh 25%;
   margin-top: 5px;
 }
 
 #contact img {
-  height: 25px;
+  height: 5vw;
+  width: 5vw;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
